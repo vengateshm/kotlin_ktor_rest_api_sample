@@ -1,1 +1,1 @@
-web: java -jar build/libs/facts-0.0.1.jar
+web: build/install/facts/bin/facts
