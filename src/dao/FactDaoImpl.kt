@@ -8,10 +8,12 @@ import org.jetbrains.exposed.sql.selectAll
 import org.jetbrains.exposed.sql.transactions.transaction
 
 class FactDaoImpl(private val database: Database) : FactDao {
-    override fun init() =
+
+    init {
         transaction(database) {
             SchemaUtils.create(Facts) // Create Fact table
         }
+    }
 
     override fun createFact(description: String) =
         transaction(database) {

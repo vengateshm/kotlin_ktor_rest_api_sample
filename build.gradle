@@ -54,6 +54,7 @@ dependencies {
     implementation "io.ktor:ktor-server-host-common:$ktor_version"
     implementation "io.ktor:ktor-html-builder:$ktor_version"
     implementation "ch.qos.logback:logback-classic:$logback_version"
+    implementation "io.ktor:ktor-auth:$ktor_version"
     implementation "org.jetbrains.exposed:exposed:0.12.1"
     implementation "com.h2database:h2:1.4.191"
     implementation "joda-time:joda-time:2.9.2"
