@@ -18,9 +18,47 @@ Heroku Deployment - [Deploying Gradle apps on Heroku](https://devcenter.heroku.c
 
 **API Endpoints**
 
-https://interesting-facts-app.herokuapp.com/api/users - POST (email, displayName, password in request body content - JSON)
-https://interesting-facts-app.herokuapp.com/api/facts - POST (description in request body content - JSON and Basic Auth)
-https://interesting-facts-app.herokuapp.com/api/facts/all - GET (Basic Auth)
+1. Create user - https://interesting-facts-app.herokuapp.com/api/users - POST
+
+Request
+```json
+{
+	"email":"aaaa@in.com",
+	"displayName":"Artemis",
+	"password":"********"
+}
+```
+
+2. Create post - https://interesting-facts-app.herokuapp.com/api/facts - POST
+
+Basic Auth
+
+Request
+```json
+{
+	"description":"This is a boring fact!"
+}
+```
+3. Get all facts - https://interesting-facts-app.herokuapp.com/api/facts/all - GET 
+
+Basic Auth
+
+Response
+```json
+{
+  "userId": 1,
+  "facts": [
+    {
+      "id": 1,
+      "description": "This is an interesting fact!"
+    },
+    {
+      "id": 2,
+      "description": "This is a boring fact!"
+    }
+  ]
+}
+```
 
 **References**
 
