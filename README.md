@@ -17,6 +17,7 @@ The following are the Ktor features used in this app
 Heroku Deployment - [Deploying Gradle apps on Heroku](https://devcenter.heroku.com/articles/deploying-gradle-apps-on-heroku)
 
 **API Endpoints**
+
 https://interesting-facts-app.herokuapp.com/api/users - POST (email, displayName, password in request body content - JSON)
 https://interesting-facts-app.herokuapp.com/api/facts - POST (description in request body content - JSON and Basic Auth)
 https://interesting-facts-app.herokuapp.com/api/facts/all - GET (Basic Auth)
